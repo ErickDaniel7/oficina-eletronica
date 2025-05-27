@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <!-- Dialeto para PostgreSQL -->
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL95Dialect</property>
+    
+    <!-- Driver JDBC para PostgreSQL -->
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    
+    <!-- URL de conexão com o PostgreSQL -->
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/eletronicaerick</property>
+    
+    <!-- Usuário do banco de dados -->
+    <property name="hibernate.connection.username">postgres</property>
+    
+    <!-- Senha do banco de dados -->
+    <property name="hibernate.connection.password">nizo</property>
+    
+    <!-- Exibir SQL gerado -->
+    <property name="hibernate.show_sql">true</property>
+    
+    <!-- Formatar o SQL -->
+    <property name="hibernate.format_sql">true</property>
+    
+    <!-- Definir fábrica de tradução de consulta -->
+    <property name="hibernate.query.factory_class">org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory</property>
+    
+    <!-- Definir estratégia para atualizar o banco de dados -->
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    
+    <!-- Mapeamento das classes -->
+    <mapping class="dominio.Cliente"/>
+    <mapping class="dominio.Cidade"/>
+    <mapping class="dominio.EletronicoCliente"/>
+    <mapping class="dominio.EletronicoReformado"/>
+    <mapping class="dominio.Marca"/>
+    <mapping class="dominio.Servico"/>
+    <mapping class="dominio.TipoEletronico"/>
+    <mapping class="dominio.VendaReformado"/>
+  </session-factory>
+</hibernate-configuration>
