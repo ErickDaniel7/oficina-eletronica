@@ -65,15 +65,17 @@ O sistema é dividido em camadas, seguindo boas práticas de organização e des
 
 ## 🚀 Como Executar o Projeto
 
-1. Clone o repositório:
+### 1. Clone o repositório:
    ```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
+````
 
-2. Navegue até a Pasta do Projeto
+### 2. Navegue até a Pasta do Projeto
    ```bash
    cd oficina-eletronica
+```
 
-3. Configuração do Banco de Dados
+### 3. Configuração do Banco de Dados
 
 - O projeto utiliza o Hibernate para persistência de dados. Para configurá-lo corretamente, siga os seguintes passos:
 - Abra o arquivo hibernate.cfg.xml localizado na pasta de configuração do projeto.
@@ -97,6 +99,6 @@ No exemplo acima, o nome da database é eletronicaerick. Substitua eletronicaeri
 ```
 Se você estiver usando outro banco de dados (como MySQL), altere o driver JDBC para o correspondente ao seu banco.
 
-4. Compilar e Executar o Projeto
+### 4. Compilar e Executar o Projeto
 
 Após configurar o banco de dados, você pode compilar e executar o projeto utilizando a IDE de sua escolha (como IntelliJ IDEA, NetBeans ou Eclipse) ou via linha de comando.
